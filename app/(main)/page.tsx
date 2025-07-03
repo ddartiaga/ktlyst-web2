@@ -1,9 +1,50 @@
+import Image from "next/image";
 
 
 export default function Page() {
+    const slides = [
+        {
+            src: '/custom/img/hero/network-switch-and-ethernet-cables.jpg',
+            alt: 'Network switch and ethernet cables',
+            heading: 'Secure Your Network',
+            subheading: 'High-performance and scalable infrastructure',
+            cta: 'Explore Solutions',
+            align: 'start', // left
+        },
+        {
+            src: '/custom/img/hero/cloud-technology.jpg',
+            alt: 'Cloud technology',
+            heading: 'Cloud First',
+            subheading: 'Deploy smarter with modern cloud platforms',
+            cta: 'Start Building',
+            align: 'center', // center
+        },
+        {
+            src: '/custom/img/hero/web-developer.jpg',
+            alt: 'Web developer',
+            heading: 'Modern Applications',
+            subheading: 'Develop faster, better, and cleaner',
+            cta: 'Let’s Talk',
+            align: 'end', // right
+        },
+    ];
+
+    const getTextAlignClass = (align: string) => {
+        switch (align) {
+          case 'start':
+            return 'text-start justify-content-start';
+          case 'center':
+            return 'text-center justify-content-center';
+          case 'end':
+            return 'text-end justify-content-end';
+          default:
+            return 'text-center justify-content-center';
+        }
+      };
+
     return (
         <>
-            <div className="landing-banner" id="home">
+            {/* <div className="landing-banner" id="home">
                 <section className="section">
                     <div className="container main-banner-container pb-lg-0">
                         <div className="row">
@@ -30,17 +71,76 @@ export default function Page() {
                             </div>
                             <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-4">
                                 <div className="text-end landing-main-image landing-heading-img">
-                                    {/* <img
+                                    <img
                                         src="/assets/images/media/landing/1.png"
                                         alt=""
                                         className="img-fluid"
-                                    /> */}
+                                    />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-            </div>
+            </div> */}
+
+            <section>
+                <div className="swiper pagination" style={{ height: '780px' }}>
+                    <div className="swiper-wrapper h-100">
+                        {slides.map((slide, i) => (
+                            <div key={i} className="swiper-slide position-relative h-100 w-100 overflow-hidden">
+                                {/* Image */}
+                                <Image
+                                    src={slide.src}
+                                    alt={slide.alt}
+                                    fill
+                                    style={{ objectFit: 'cover' }}
+                                    className="rounded-0"
+                                    sizes="(max-width: 1200px) 100vw, 1200px"
+                                />
+
+                                {/* Overlay */}
+                                <div
+                                    className="position-absolute top-0 start-0 w-100 h-100"
+                                    style={{
+                                        background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7))',
+                                        zIndex: 1,
+                                    }}
+                                />
+
+                                {/* Slide Content using Flexbox */}
+                                <div
+                                    className={`position-absolute top-0 start-0 d-flex flex-column justify-content-center align-items-${slide.align} text-white px-4 px-md-5 w-100 h-100`}
+                                    style={{ zIndex: 2 }}
+                                >
+                                    <div
+                                        className={`text-${slide.align} ${slide.align === 'start' ? 'ms-md-7' : slide.align === 'end' ? 'me-md-7' : ''}`}
+                                        style={{ maxWidth: '720px' }}
+                                    >
+                                        <div className="mb-3">
+                                            <h1 className="fw-semibold text-fixed-white op-9">
+                                                {slide.heading}
+                                            </h1>
+                                        </div>
+                                        <div className="fs-16 mb-5 text-fixed-white op-7">
+                                            {slide.subheading}
+                                        </div>
+                                        <a href="index.html" className="m-1 btn btn-primary">
+                                            {slide.cta}
+                                            <i className="ri-eye-line ms-2 align-middle" />
+                                        </a>
+                                        {/* <h1 className="display-4 fw-bold mb-3"></h1> */}
+                                        {/* <p className="lead mb-4">{slide.subheading}</p> */}
+                                        {/* <a href="#" className="btn btn-primary btn-lg">
+                                            {slide.cta}
+                                        </a> */}
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="swiper-pagination"></div>
+                </div>
+            </section>
 
         </>
     );
