@@ -1,4 +1,125 @@
-
 .swiper {
     border-radius: 0 !important;
+}
+
+/* Custom heading animations */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes typewriter {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* Simple animation that works immediately */
+.animate-heading {
+    animation: slideInFromTop 1s ease-out 0.5s both;
+    opacity: 0;
+}
+
+/* Alternative: Use CSS transitions instead of animations */
+.animate-heading-transition {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 1s ease-out;
+}
+
+.swiper-slide-active .animate-heading-transition {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Base animation class - starts hidden */
+.animate-heading {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 1s ease-out;
+}
+
+/* Animation for active slide */
+.swiper-slide-active .animate-heading {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideInFromTop 1s ease-out 0.3s forwards;
+}
+
+/* Alternative animation classes */
+.animate-heading-scale {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 1.2s ease-out;
+}
+
+.swiper-slide-active .animate-heading-scale {
+    opacity: 1;
+    transform: scale(1);
+    animation: fadeInScale 1.2s ease-out 0.3s forwards;
+}
+
+.animate-heading-typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2s steps(40, end) forwards;
+}
+
+/* Ensure animations work on all slides */
+.swiper-slide .animate-heading {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.swiper-slide-active .animate-heading {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideInFromTop 1s ease-out 0.3s forwards;
+}
+
+/* Subheading animation - slide from right */
+.animate-subheading-transition {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease-out 0.3s;
+}
+
+.swiper-slide-active .animate-subheading-transition {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Call-to-action button animation - slide from bottom */
+.animate-cta-transition {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out 0.8s;
+}
+
+.swiper-slide-active .animate-cta-transition {
+    opacity: 1;
+    transform: translateY(0);
 }

@@ -6,41 +6,68 @@ export default function Page() {
         {
             src: '/custom/img/hero/network-switch-and-ethernet-cables.jpg',
             alt: 'Network switch and ethernet cables',
-            heading: 'Secure Your Network',
-            subheading: 'High-performance and scalable infrastructure',
-            cta: 'Explore Solutions',
-            align: 'start', // left
+            labelClass: 'col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start',
+            heading: 'Katalyst IT Services — Your Trusted Tech Partner',
+            subheading: 'We help businesses modernize operations with reliable IT equipment, custom software, cloud consulting, and full-stack tech solutions.',
+            cta: 'Explore Our Services',
+            ctaLink: 'start',
         },
         {
-            src: '/custom/img/hero/cloud-technology.jpg',
-            alt: 'Cloud technology',
-            heading: 'Cloud First',
-            subheading: 'Deploy smarter with modern cloud platforms',
-            cta: 'Start Building',
-            align: 'center', // center
+            src: '/custom/img/hero/abstract-cybersecurity-concept-design.jpg',
+            alt: 'Servers',
+            labelClass: 'col-md-10 offset-md-1 col-lg-7 offset-lg-5 col-xl-6 offset-xl-6 col-xxl-5 offset-xxl-6 text-center text-lg-start justify-content-center align-self-center align-items-start',
+            heading: 'Reliable IT Hardware Delivered Fast',
+            subheading: 'From uninterruptible power supplies (UPS), laptops to servers and routers — we supply quality IT equipment for every business need.',
+            cta: 'Request a Quote Today',
+            ctaLink: 'start'
         },
         {
             src: '/custom/img/hero/web-developer.jpg',
             alt: 'Web developer',
-            heading: 'Modern Applications',
-            subheading: 'Develop faster, better, and cleaner',
-            cta: 'Let’s Talk',
-            align: 'end', // right
+            labelClass: 'col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center justify-content-center align-self-center',
+            heading: 'Custom Web and Mobile Apps That Work for You',
+            subheading: 'We build scalable websites and mobile applications that drive results across devices.',
+            cta: 'Start Your Project Now',
+            ctaLink: 'end',
+        },
+        {
+            src: '/custom/img/hero/cloud-technology.jpg',
+            alt: 'Cloud technology',
+            labelClass: 'col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start',
+            heading: 'Cloud Strategy and Migration Made Simple',
+            subheading: 'Maximize performance and reduce costs with expert cloud consulting and infrastructure solutions.',
+            cta: 'Talk to a Cloud Expert',
+            ctaLink: 'center'
+        },
+        {
+            src: '/custom/img/hero/computer-servicing.jpg',
+            alt: 'Computer Servicing',
+            labelClass: 'col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start',
+            heading: 'Reliable IT Support and System Maintenance',
+            subheading: 'Prevent downtime and keep your tech running smoothly with our proactive maintenance services.',
+            cta: 'Schedule a Service',
+            ctaLink: 'center'
+        },
+        {
+            src: '/custom/img/hero/working-technician.jpg',
+            alt: 'Computer Technician',
+            labelClass: 'col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center justify-content-center align-self-center',
+            heading: 'Skilled IT Professionals, When You Need Them',
+            subheading: 'Augment your team with certified developers, engineers, and IT support staff.',
+            cta: 'Hire Now',
+            ctaLink: 'center'
+        },
+        {
+            src: '/custom/img/hero/software-license.png',
+            alt: 'Computer Software License',
+            labelClass: 'col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start',
+            heading: 'Official Software Licenses, All in One Place',
+            subheading: 'We supply genuine software licenses for Windows, Microsoft 365, Adobe, and more.',
+            cta: 'Get a License Quote',
+            ctaLink: 'center'
         },
     ];
 
-    const getTextAlignClass = (align: string) => {
-        switch (align) {
-          case 'start':
-            return 'text-start justify-content-start';
-          case 'center':
-            return 'text-center justify-content-center';
-          case 'end':
-            return 'text-end justify-content-end';
-          default:
-            return 'text-center justify-content-center';
-        }
-      };
 
     return (
         <>
@@ -107,32 +134,34 @@ export default function Page() {
                                     }}
                                 />
 
-                                {/* Slide Content using Flexbox */}
+                                {/* Slide Content using Bootstrap grid system */}
                                 <div
-                                    className={`position-absolute top-0 start-0 d-flex flex-column justify-content-center align-items-${slide.align} text-white px-4 px-md-5 w-100 h-100`}
+                                    className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center"
                                     style={{ zIndex: 2 }}
                                 >
-                                    <div
-                                        className={`text-${slide.align} ${slide.align === 'start' ? 'ms-md-7' : slide.align === 'end' ? 'me-md-7' : ''}`}
-                                        style={{ maxWidth: '720px' }}
-                                    >
-                                        <div className="mb-3">
-                                            <h1 className="fw-semibold text-fixed-white op-9">
-                                                {slide.heading}
-                                            </h1>
+                                    <div className="container h-100">
+                                        <div className="row h-100">
+                                            <div className={slide.labelClass}>
+                                                <h2
+                                                    className="display-5 fw-semibold fs-48 mb-4 text-white mb-3 animate-heading-transition"
+                                                >
+                                                    {slide.heading}
+                                                </h2>
+                                                <p
+                                                    className="lead fs-20 lh-sm mb-7 text-white animate-subheading-transition"
+                                                    style={{ letterSpacing: '1px' }}
+                                                >
+                                                    {slide.subheading}
+                                                </p>
+                                                <a
+                                                    href="index.html"
+                                                    className="m-1 btn btn-outline-light rounded-pill btn-wave text-white p-10 animate-cta-transition"
+                                                >
+                                                    {slide.cta}
+                                                    {/* <i className="ri-eye-line ms-2 align-middle" /> */}
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div className="fs-16 mb-5 text-fixed-white op-7">
-                                            {slide.subheading}
-                                        </div>
-                                        <a href="index.html" className="m-1 btn btn-primary">
-                                            {slide.cta}
-                                            <i className="ri-eye-line ms-2 align-middle" />
-                                        </a>
-                                        {/* <h1 className="display-4 fw-bold mb-3"></h1> */}
-                                        {/* <p className="lead mb-4">{slide.subheading}</p> */}
-                                        {/* <a href="#" className="btn btn-primary btn-lg">
-                                            {slide.cta}
-                                        </a> */}
                                     </div>
                                 </div>
                             </div>
@@ -140,7 +169,7 @@ export default function Page() {
                     </div>
                     <div className="swiper-pagination"></div>
                 </div>
-            </section>
+            </section >
 
         </>
     );

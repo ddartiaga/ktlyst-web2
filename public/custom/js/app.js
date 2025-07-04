@@ -1,23 +1,40 @@
+// scrollCue
+scrollCue.init();
 
-// swiper
+// Swiper animation control
 document.addEventListener('DOMContentLoaded', function () {
-    // Delay to make sure Swiper is already initialized
-    setTimeout(() => {
-        // Fallback 1: Use element.swiper if Swiper instance is attached to DOM
-        const swiperElements = document.querySelectorAll('.swiper');
-        swiperElements.forEach(el => {
-            if (el.swiper) {
-                el.swiper.params.speed = 7000; // 1000ms = 1 second
-                console.log('[Swiper] Speed set to 1000ms for', el);
+    const swiper = document.querySelector('.swiper');
+    if (swiper) {
+        // Initialize animations for the first slide
+        setTimeout(() => {
+            const firstSlide = swiper.querySelector('.swiper-slide-active');
+            if (firstSlide) {
+                const heading = firstSlide.querySelector('.animate-heading');
+                if (heading) {
+                    heading.style.animation = 'none';
+                    heading.offsetHeight; // Trigger reflow
+                    heading.style.animation = null;
+                }
+            }
+        }, 100);
+
+        // Handle slide changes
+        swiper.addEventListener('slideChange', function () {
+            const activeSlide = swiper.querySelector('.swiper-slide-active');
+            if (activeSlide) {
+                // Reset and trigger animation for the new active slide
+                const heading = activeSlide.querySelector('.animate-heading');
+                if (heading) {
+                    // Reset animation
+                    heading.style.animation = 'none';
+                    heading.offsetHeight; // Trigger reflow
+
+                    // Re-enable animation with delay
+                    setTimeout(() => {
+                        heading.style.animation = 'slideInFromTop 1s ease-out 0.3s forwards';
+                    }, 50);
+                }
             }
         });
-
-        // Optional fallback 2: If global Swiper.instances exists (older versions)
-        if (window.Swiper && window.Swiper.instances) {
-            Object.values(window.Swiper.instances).forEach(swiper => {
-                swiper.params.speed = 7000;
-                console.log('[Swiper] Speed set to 1000ms from instances');
-            });
-        }
-    }, 100); // Adjust delay if needed
+    }
 });
