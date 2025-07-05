@@ -1,0 +1,39 @@
+.swiper {
+    border-radius: 0 !important;
+}
+
+/* Heading animation - slide from top */
+.animate-heading-transition {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 1s ease-out;
+}
+
+.swiper-slide-active .animate-heading-transition {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Subheading animation - slide from right */
+.animate-subheading-transition {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease-out 0.3s;
+}
+
+.swiper-slide-active .animate-subheading-transition {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Call-to-action button animation - slide from bottom */
+.animate-cta-transition {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out 0.8s;
+}
+
+.swiper-slide-active .animate-cta-transition {
+    opacity: 1;
+    transform: translateY(0);
+}

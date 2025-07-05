@@ -5,7 +5,7 @@
     var swiper = new Swiper(".swiper-basic", {
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false,
         }
     });
@@ -18,7 +18,7 @@
         },
         loop: true,
         // autoplay: {
-        //     delay: 1500,
+        //     delay: 5000,
         //     disableOnInteraction: false,
         // }
     });
@@ -31,7 +31,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -45,7 +45,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -63,7 +63,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -81,7 +81,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -97,7 +97,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -110,7 +110,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -124,7 +124,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -141,7 +141,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -163,7 +163,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -200,7 +200,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -219,7 +219,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -237,7 +237,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -261,7 +261,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
@@ -284,7 +284,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
