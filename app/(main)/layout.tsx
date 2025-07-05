@@ -40,11 +40,8 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                     <Header />
                     <NavBar />
 
-                    <div className="main-content landing-main px-0">
-                        {children}
-
-                        <Copyright />
-                    </div>
+                    {children}
+                    <Copyright />
                 </div>
 
                 <div className="scrollToTop">
