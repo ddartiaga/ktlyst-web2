@@ -2,11 +2,7 @@ import RotatorText from "@/components/ui/core/widgets/RotatorText";
 import Brands from "./brands";
 
 export default function CompanyProfile() {
-    const rotatorTexts = [
-        "web design",
-        "cloud consulting",
-        "hardware delivery"
-    ];
+
     return (
         <>
 

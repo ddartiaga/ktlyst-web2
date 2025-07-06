@@ -16,7 +16,7 @@ export default function RotatorText({texts}:{texts: string[]}) {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [texts]);
 
   return (
     <span className={`rotator-text ${fade ? 'rotator-fade-in' : 'rotator-fade-out'}`}>
