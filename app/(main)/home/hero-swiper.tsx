@@ -9,7 +9,7 @@ export default function HeroSwiper() {
             heading: 'Katalyst IT Services — Your Trusted Tech Partner',
             subheading: 'We help businesses modernize operations with reliable IT equipment, custom software, cloud consulting, and full-stack tech solutions.',
             cta: 'Explore Our Services',
-            ctaLink: 'start',
+            ctaLink: '#our-services',
         },
         {
             src: '/custom/img/hero/abstract-cybersecurity-concept-design.jpg',
@@ -112,7 +112,7 @@ export default function HeroSwiper() {
                                                 {slide.subheading}
                                             </p>
                                             <a
-                                                href="index.html"
+                                                href={slide.ctaLink}
                                                 className="m-1 btn btn-outline-light rounded-pill btn-wave text-white p-10 animate-cta-transition"
                                             >
                                                 {slide.cta}

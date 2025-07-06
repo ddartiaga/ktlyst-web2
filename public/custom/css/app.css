@@ -37,3 +37,24 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+
+/* ROTATOR */
+
+.rotator-text {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.rotator-fade-in {
+    opacity: 1;
+}
+
+.rotator-fade-out {
+    opacity: 0;
+}
+
+/* ROTATOR */
