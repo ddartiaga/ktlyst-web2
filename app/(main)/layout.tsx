@@ -33,7 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function MainLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" dir="ltr" data-nav-layout="horizontal" data-nav-style="menu-click" data-menu-position="fixed" data-theme-mode="light">
-            <body className="landing-body">
+            <body className="landing-body multi-page">
                 <Switcher />
 
                 <div className="landing-page-wrapper">
