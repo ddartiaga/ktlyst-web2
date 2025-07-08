@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { items } from "../nav/NavMenuItems";
+import { items } from "./nav-items";
 import { NavItem } from "../nav/NavItem";
 
 export default function NavBar() {

@@ -1,0 +1,53 @@
+.multi-page .app-sidebar.sticky {
+    background-color: var(--custom-white) !important;
+    box-shadow: 0 .25rem 1rem var(--black-1) !important;
+}
+
+.multi-page .app-sidebar.sticky .side-menu__item.active {
+    font-weight: normal;
+}
+
+.multi-page .app-sidebar.sticky .side-menu__item.active .side-menu__label {
+    color: var(--primary-color) !important;
+}
+
+.multi-page .app-sidebar.sticky .side-menu__item.active .side-menu__angle {
+    color: var(--primary-color) !important;
+}
+
+.multi-page .app-sidebar.sticky {
+    background-color: var(--custom-white);
+    box-shadow: 0 0.25rem 1rem var(--black-1);
+}
+
+.multi-page .app-sidebar.sticky .side-menu__item .side-menu__angle {
+    color: var(--menu-prime-color);
+}
+
+.multi-page .app-sidebar.sticky .side-menu__item:hover .side-menu__angle {
+    color: var(--primary-color) !important;
+}
+
+.multi-page .app-sidebar.sticky.app-sidebar .side-menu__label {
+    color: var(--custom-black);
+}
+
+.multi-page .app-sidebar.sticky .landing-logo-container .horizontal-logo .desktop-white {
+    display: none;
+}
+
+.multi-page .app-sidebar.sticky .landing-logo-container .horizontal-logo .desktop-logo {
+    display: block;
+}
+
+.multi-page .app-sidebar.sticky.app-sidebar .side-menu__item:hover .side-menu__label {
+    color: var(--primary-color) !important;
+}
+
+.multi-page .app-sidebar.sticky .side-menu__item .side-menu__angle {
+    color: var(--menu-prime-color) !important;
+}
+
+[data-nav-style="menu-click"][data-nav-layout="horizontal"] .multi-page .app-sidebar .side-menu__item.active .side-menu__label, [data-nav-style="menu-click"][data-nav-layout="horizontal"] .multi-page .app-sidebar .side-menu__item.active .side-menu__angle, [data-nav-style="menu-click"][data-nav-layout="horizontal"] .multi-page .app-sidebar .side-menu__item:hover .side-menu__label, [data-nav-style="menu-click"][data-nav-layout="horizontal"] .multi-page .app-sidebar .side-menu__item:hover .side-menu__angle {
+    color: var(--primary-color) !important;
+}

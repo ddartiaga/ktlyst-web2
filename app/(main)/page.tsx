@@ -1,3 +1,4 @@
+import Brands from "./home/brands";
 import CompanyProfile from "./home/company-profile";
 import HomeContact from "./home/contact-us";
 import HeroSwiper from "./home/hero-swiper";
@@ -13,6 +14,7 @@ export default function Page() {
                 <CompanyProfile />
                 <Services />
                 <TechStack />
+                <Brands />
                 <PopularProducts />
                 <HomeContact />
             </div>

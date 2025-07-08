@@ -1,5 +1,4 @@
 import RotatorText from "@/components/ui/core/widgets/RotatorText";
-import Brands from "./brands";
 
 export default function CompanyProfile() {
 
@@ -21,7 +20,8 @@ export default function CompanyProfile() {
                                 Who Are We and What We Do?
                             </h1>
                             <p className="text-muted fs-15 mb-3 fw-normal">
-                                We help businesses modernize their infrastructure and automate manual processes—end to end.
+                                We are Katalyst — a future-driven IT solutions company that believes in the power of automation, innovation, and honest transformation.
+
                             </p>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ export default function CompanyProfile() {
                                 </span>
                             </h1>
                             <p className="lead fs-lg mb-7">
-                                We are Katalyst — a future-driven IT solutions company that believes in the power of automation, innovation, and honest transformation.
+                                We help businesses modernize their infrastructure and automate manual processes—end to end.
                             </p>
                             <span>
                                 <a href="mailto:katalysttechservices@gmail.com" className="btn btn-lg btn-primary rounded-pill me-2">Send Email <i className="ri-send-plane-fill ms-2 align-middle" /></a>
@@ -108,8 +108,6 @@ export default function CompanyProfile() {
                     </div>
                 </div>
             </section>
-
-            <Brands />
         </>
 
     );
