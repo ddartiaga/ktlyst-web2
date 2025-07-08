@@ -1,13 +1,13 @@
-import { MenuItem } from "./NavItem";
+import { MenuItem } from "../nav/NavItem";
 
 export const items: MenuItem[] = [
     {
         label: "Home",
-        href: "#home"
+        href: "/"
     },
     {
         label: "About",
-        href: "#home"
+        href: "/about"
     },
     {
         label: "Products",
@@ -75,10 +75,10 @@ export const items: MenuItem[] = [
     },
     {
         label: "Partner Program",
-        href: "#home"
+        href: "#company-profile"
     },
     {
         label: "Contact Us",
-        href: "#home"
+        href: "#contact"
     },
 ];

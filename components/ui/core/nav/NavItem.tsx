@@ -1,6 +1,5 @@
-"use client";
-
 import clsx from "clsx";
+import Link from "next/link";
 
 type Subcategory = {
     label: string;
@@ -23,12 +22,12 @@ export const NavItem = ({ item }: { item: MenuItem }) => {
     return (
         <li className={clsx("slide", item.categories && "has-sub")}>
 
-            <a href={item.href} className="side-menu__item">
+            <Link href={item.href} className="side-menu__item">
                 <span className="side-menu__label">{item.label}</span>
                 {item.categories && (
                     <i className="fe fe-chevron-right side-menu__angle op-8" />
                 )}
-            </a>
+            </Link>
 
             {/* loop through categories */}
             {item.categories && (

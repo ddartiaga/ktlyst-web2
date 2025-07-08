@@ -76,7 +76,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                 <Script src="/assets/libs/choices.js/public/assets/scripts/choices.min.js"></Script>
                 <Script src="/assets/libs/swiper/swiper-bundle.min.js"></Script>
                 <Script src="/assets/js/defaultmenu.min.js"></Script>
-                <Script src="/assets/js/landing.js"></Script>
+                <Script src="/custom/js/landing-multi.js"></Script>
                 <Script src="/assets/libs/node-waves/waves.min.js"></Script>
                 <Script src="/assets/js/sticky.js"></Script>
 
