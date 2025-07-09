@@ -5,7 +5,7 @@ export default function CompanyProfile() {
     return (
         <>
 
-            <section className="section " id="company-profile">
+            <section className="section" id="company-profile">
                 <div className="container text-center">
                     {/* <p className="fs-30 fw-semibold text-primary mb-1">
                     <span className="">COMPANY PROFILE</span>
@@ -66,8 +66,7 @@ export default function CompanyProfile() {
                                                 Our Vision
                                             </h6>
                                             <p className=" text-muted">
-                                                To be a trusted partner for IT equipment supply, software
-                                                development, and skilled workforce solutions that fuel growth.
+                                            To be the trusted partner in delivering IT equipment, custom software solutions, and skilled workforce services that drive innovation and sustainable growth for our clients.
                                             </p>
                                         </div>
                                     </div>
@@ -82,8 +81,7 @@ export default function CompanyProfile() {
                                                 Our Mission
                                             </h6>
                                             <p className=" text-muted">
-                                                To empower businesses and organizations through technology,
-                                                automation, equipment, and expert manpower.
+                                                To empower institutions through digitalization, automation and infrastructure modernization.
                                             </p>
                                         </div>
                                     </div>
