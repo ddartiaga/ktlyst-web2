@@ -1,16 +1,19 @@
 import CompanyProfile from "../home/company-profile"
 
 import "@/public/custom/css/sticky-pin.css";
+import WhyChooseUs from "./why-choose-us";
+import Team from "./team";
+import AboutBanner from "./about-banner";
 
 export default function Page() {
     return (
         <>
             <div className="main-content app-content">
-                <div className="container-fluid">
-                    <CompanyProfile />
-                </div>
+                <AboutBanner />
+                <CompanyProfile />
+                <WhyChooseUs />
+                <Team />
             </div>
         </>
     );
-
 }

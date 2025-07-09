@@ -1,3 +1,4 @@
+import WhyChooseUs from "./about/why-choose-us";
 import Brands from "./home/brands";
 import CompanyProfile from "./home/company-profile";
 import HomeContact from "./home/contact-us";
@@ -12,6 +13,7 @@ export default function Page() {
             <div className="main-content landing-main px-0">
                 <HeroSwiper />
                 <CompanyProfile />
+                <WhyChooseUs />
                 <Services />
                 <TechStack />
                 <Brands />
