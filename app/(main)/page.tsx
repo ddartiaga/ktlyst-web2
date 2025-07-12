@@ -1,4 +1,4 @@
-import WhyChooseUs from "./about/why-choose-us";
+import WhyChooseUs from "./about-us/why-choose-us";
 import Brands from "./home/brands";
 import CompanyProfile from "./home/company-profile";
 import HomeContact from "./home/contact-us";

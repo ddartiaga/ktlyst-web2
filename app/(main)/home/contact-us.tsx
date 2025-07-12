@@ -30,7 +30,7 @@ export default function HomeContact() {
                     <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div className="card custom-card  overflow-hidden section-bg border overflow-hidden shadow-none">
                             <div className="card-header">
-                                <div className="card-title">Get In Touch !</div>
+                                <div className="card-title">Get In Touch <i className="ri-hand me-3 text-warning fw-normal"></i></div>
                             </div>
                             <div className="card-body">
                                 <ContactForm />
