@@ -79,6 +79,6 @@ export const items: MenuItem[] = [
     },
     {
         label: "Contact Us",
-        href: "#contact"
+        href: "/contact-us"
     },
 ];
