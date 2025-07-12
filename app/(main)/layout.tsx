@@ -4,6 +4,7 @@ import Switcher from "@/components/ui/core/main/Switcher";
 import Header from "@/components/ui/core/main/Header";
 import NavBar from "@/components/ui/core/main/NavBar";
 import Copyright from "@/components/ui/core/Copyright";
+import Footer from "./footer";
 
 import { Metadata } from "next";
 
@@ -41,6 +42,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                     <NavBar />
 
                     {children}
+                    <Footer />
                     <Copyright />
                 </div>
 

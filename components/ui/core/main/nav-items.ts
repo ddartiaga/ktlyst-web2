@@ -7,7 +7,7 @@ export const items: MenuItem[] = [
     },
     {
         label: "About",
-        href: "/about"
+        href: "/about-us"
     },
     {
         label: "Products",
