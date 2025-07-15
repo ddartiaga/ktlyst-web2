@@ -61,16 +61,19 @@ export default function NavBar() {
                         </div>
                         <div className="d-lg-flex d-none">
                             <div className="btn-list d-lg-flex d-none mt-lg-2 mt-xl-0 mt-0">
-                                <a href="sign-up-basic.html" className="btn btn-wave btn-primary">
+                                <a href="#" className="btn btn-wave btn-primary">
                                     Sign Up
                                 </a>
-                                <button
+                                <a href="#" className="btn btn-wave btn-primary">
+                                    Login
+                                </a>
+                                {/* <button
                                     className="btn btn-wave btn-icon btn-light switcher-icon"
                                     data-bs-toggle="offcanvas"
                                     data-bs-target="#switcher-canvas"
                                 >
                                     <i className="ri-settings-3-line" />
-                                </button>
+                                </button> */}
                             </div>
                         </div>
                     </nav>

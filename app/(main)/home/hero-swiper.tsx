@@ -1,6 +1,34 @@
-import Image from "next/image";
+
+
+'use client';
+import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function HeroSwiper() {
+    useEffect(() => {
+        const swiperContainer = document.querySelector<HTMLElement & { swiper?: { destroy: (deleteInstance?: boolean, cleanStyles?: boolean) => void } }>('.swiper');
+        if (!swiperContainer || !window.Swiper) return;
+
+        if (swiperContainer.swiper) {
+            swiperContainer.swiper.destroy(true, false);
+        }
+
+        const swiperInstance = new window.Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        return () => {
+            swiperInstance.destroy(true, false);
+        };
+    }, []);
+
     const slides = [
         {
             src: '/custom/img/hero/network-switch-and-ethernet-cables.jpg',
@@ -68,65 +96,69 @@ export default function HeroSwiper() {
     ];
 
     return (
-        <section>
-            <div className="swiper pagination" style={{ height: '780px' }}>
-                <div className="swiper-wrapper h-100">
-                    {slides.map((slide, i) => (
-                        <div key={i} className="swiper-slide position-relative h-100 w-100 overflow-hidden">
-                            {/* Image */}
-                            <Image
-                                src={slide.src}
-                                alt={slide.alt}
-                                fill
-                                style={{ objectFit: 'cover' }}
-                                className="rounded-0"
-                                sizes="(max-width: 1200px) 100vw, 1200px"
-                            />
+        <>
+            <section>
+                <div className="swiper pagination" style={{ height: '780px' }}>
+                    <div className="swiper-wrapper h-100">
+                        {slides.map((slide, i) => (
+                            <div key={i} className="swiper-slide position-relative h-100 w-100 overflow-hidden">
+                                {/* Image */}
+                                <Image
+                                    priority
+                                    src={slide.src}
+                                    alt={slide.alt}
+                                    fill
+                                    style={{ objectFit: 'cover' }}
+                                    className="rounded-0"
+                                    sizes="(max-width: 1200px) 100vw, 1200px"
+                                />
 
-                            {/* Overlay */}
-                            <div
-                                className="position-absolute top-0 start-0 w-100 h-100"
-                                style={{
-                                    background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7))',
-                                    zIndex: 1,
-                                }}
-                            />
+                                {/* Overlay */}
+                                <div
+                                    className="position-absolute top-0 start-0 w-100 h-100"
+                                    style={{
+                                        background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7))',
+                                        zIndex: 1,
+                                    }}
+                                />
 
-                            {/* Slide Content using Bootstrap grid system */}
-                            <div
-                                className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center"
-                                style={{ zIndex: 2 }}
-                            >
-                                <div className="container h-100">
-                                    <div className="row h-100">
-                                        <div className={slide.labelClass}>
-                                            <h2
-                                                className="display-5 fw-semibold fs-48 mb-4 text-white mb-3 animate-heading-transition"
-                                            >
-                                                {slide.heading}
-                                            </h2>
-                                            <p
-                                                className="lead fs-20 lh-sm mb-7 text-white animate-subheading-transition"
-                                                style={{ letterSpacing: '1px' }}
-                                            >
-                                                {slide.subheading}
-                                            </p>
-                                            <a
-                                                href={slide.ctaLink}
-                                                className="m-1 btn btn-outline-light rounded-pill btn-wave text-white p-10 animate-cta-transition"
-                                            >
-                                                {slide.cta}
-                                                {/* <i className="ri-eye-line ms-2 align-middle" /> */}
-                                            </a>
+                                {/* Slide Content using Bootstrap grid system */}
+                                <div
+                                    className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center"
+                                    style={{ zIndex: 2 }}
+                                >
+                                    <div className="container h-100">
+                                        <div className="row h-100">
+                                            <div className={slide.labelClass}>
+                                                <h2
+                                                    className="display-5 fw-semibold fs-48 mb-4 text-white mb-3 animate-heading-transition"
+                                                >
+                                                    {slide.heading}
+                                                </h2>
+                                                <p
+                                                    className="lead fs-20 lh-sm mb-7 text-white animate-subheading-transition"
+                                                    style={{ letterSpacing: '1px' }}
+                                                >
+                                                    {slide.subheading}
+                                                </p>
+                                                <a
+                                                    href={slide.ctaLink}
+                                                    className="m-1 btn btn-outline-light rounded-pill btn-wave text-white p-10 animate-cta-transition"
+                                                >
+                                                    {slide.cta}
+                                                    {/* <i className="ri-eye-line ms-2 align-middle" /> */}
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
+                    <div className="swiper-pagination"></div>
                 </div>
-                <div className="swiper-pagination"></div>
-            </div>
-        </section >
+            </section >
+        </>
+
     );
 }
