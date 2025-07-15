@@ -11,71 +11,54 @@ export const items: MenuItem[] = [
     },
     {
         label: "Products",
-        href: "#home",
+        href: "/",
         categories: [
             {
-                label: "Statistics",
-                href: "#home",
+                label: "Uninterruptible Power Supply (UPS)",
+                href: "#",
             },
             {
-                label: "Our Mission",
-                href: "#home",
+                label: "Laptops and Desktops",
+                href: "#",
             },
-            {
-                label: "Level-2",
-                href: "#home",
-                subcategories: [
-                    {
-                        label: "Level-2-1",
-                        href: "#home",
-                    },
-                    {
-                        label: "Level-2-2",
-                        href: "#home",
-                    },
-                    {
-                        label: "Level-2-3",
-                        href: "#home",
-                    },
-                ]
-            },
+            
         ]
     },
     {
         label: "Services",
-        href: "#home",
+        href: "/",
         categories: [
             {
-                label: "Statistics",
-                href: "#home",
+                label: "Web and Mobile Development",
+                href: "#",
             },
             {
-                label: "Our Mission",
-                href: "#home",
+                label: "IT Manpower",
+                href: "#",
             },
-            {
-                label: "Level-2",
-                href: "#home",
-                subcategories: [
-                    {
-                        label: "Level-2-1",
-                        href: "#home",
-                    },
-                    {
-                        label: "Level-2-2",
-                        href: "#home",
-                    },
-                    {
-                        label: "Level-2-3",
-                        href: "#home",
-                    },
-                ]
-            },
+            // {
+            //     label: "Level-2",
+            //     href: "#home",
+            //     subcategories: [
+            //         {
+            //             label: "Level-2-1",
+            //             href: "#home",
+            //         },
+            //         {
+            //             label: "Level-2-2",
+            //             href: "#home",
+            //         },
+            //         {
+            //             label: "Level-2-3",
+            //             href: "#home",
+            //         },
+            //     ]
+            // },
         ]
     },
     {
         label: "Partner Program",
-        href: "#company-profile"
+        href: "/"
     },
     {
         label: "Contact Us",

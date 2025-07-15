@@ -74,7 +74,7 @@ export default function Services() {
 
     return (
         <>
-            <section className="section section-bg " id="our-services">
+            <section className="section section-bg" id="our-services">
                 <div className="container text-center">
                     {/* <p className="fs-12 fw-semibold text-success mb-1">
                         <span className="landing-section-heading">OUR MISSION</span>
