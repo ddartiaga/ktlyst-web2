@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
+
+
 export default function Header() {
 
     return (
@@ -8,20 +11,10 @@ export default function Header() {
                 <div className="header-content-left">
                     <div className="header-element">
                         <div className="horizontal-logo">
-                            <a href="index.html" className="header-logo">
+                            <Link href="/" className="header-logo">
                                 <Image src="/custom/img/kata-logo.png" alt="logo" className="toggle-logo" width={70} height={200} />
                                 <Image src="/custom/img/kata-logo.png" alt="logo" className="toggle-dark" width={70} height={200} />
-                                {/* <img
-                                    src="/assets/images/brand-logos/toggle-logo.png"
-                                    alt="logo"
-                                    className="toggle-logo"
-                                />
-                                <img
-                                    src="/assets/images/brand-logos/toggle-dark.png"
-                                    alt="logo"
-                                    className="toggle-dark"
-                                /> */}
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -44,13 +37,13 @@ export default function Header() {
                             <a href="sign-up-basic.html" className="btn btn-primary-light">
                                 Sign Up
                             </a>
-                            <button
+                            {/* <button
                                 className="btn btn-icon btn-success switcher-icon"
                                 data-bs-toggle="offcanvas"
                                 data-bs-target="#switcher-canvas"
                             >
                                 <i className="ri-settings-3-line" />
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>

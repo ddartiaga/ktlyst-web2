@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { items } from "./nav-items";
 import { NavItem } from "../nav/NavItem";
@@ -13,21 +14,10 @@ export default function NavBar() {
                     <nav className="main-menu-container nav nav-pills sub-open">
                         <div className="landing-logo-container">
                             <div className="horizontal-logo">
-                                <a href="index.html" className="header-logo">
-                                    {/* <img
-                                        src="../assets/images/brand-logos/desktop-logo.png"
-                                        alt="logo"
-                                        className="desktop-logo"
-                                    />
-                                    <img
-                                        src="../assets/images/brand-logos/desktop-white.png"
-                                        alt="logo"
-                                        className="desktop-white"
-                                    /> */}
-
+                                <Link href="/" className="header-logo">
                                     <Image src="/custom/img/kata-logo.png" alt="logo" className="desktop-logo" width={70} height={60} />
                                     <Image src="/custom/img/kata-logo.png" alt="logo" className="desktop-white" width={70} height={60} />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="slide-left" id="slide-left">
@@ -64,9 +54,9 @@ export default function NavBar() {
                                 <a href="#" className="btn btn-wave btn-primary">
                                     Sign Up
                                 </a>
-                                <a href="#" className="btn btn-wave btn-primary">
+                                {/* <a href="#" className="btn btn-wave btn-primary">
                                     Login
-                                </a>
+                                </a> */}
                                 {/* <button
                                     className="btn btn-wave btn-icon btn-light switcher-icon"
                                     data-bs-toggle="offcanvas"
