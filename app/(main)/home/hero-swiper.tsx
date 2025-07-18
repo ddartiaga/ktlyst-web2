@@ -31,7 +31,7 @@ export default function HeroSwiper() {
 
     const slides = [
         {
-            src: '/custom/img/hero/network-switch-and-ethernet-cables.jpg',
+            src: '/custom/img/hero-webp/network-switch-and-ethernet-cables.webp',
             alt: 'Network switch and ethernet cables',
             labelClass: 'col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start',
             heading: 'Katalyst IT Services — Your Trusted Tech Partner',
@@ -40,7 +40,7 @@ export default function HeroSwiper() {
             ctaLink: '#our-services',
         },
         {
-            src: '/custom/img/hero/abstract-cybersecurity-concept-design.jpg',
+            src: '/custom/img/hero-webp/abstract-cybersecurity-concept-design.webp',
             alt: 'Servers',
             labelClass: 'col-md-10 offset-md-1 col-lg-7 offset-lg-5 col-xl-6 offset-xl-6 col-xxl-5 offset-xxl-6 text-center text-lg-start justify-content-center align-self-center align-items-start',
             heading: 'Reliable IT Hardware Delivered Fast',
@@ -49,7 +49,7 @@ export default function HeroSwiper() {
             ctaLink: 'start'
         },
         {
-            src: '/custom/img/hero/web-developer.jpg',
+            src: '/custom/img/hero-webp/web-developer.webp',
             alt: 'Web developer',
             labelClass: 'col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center justify-content-center align-self-center',
             heading: 'Custom Web and Mobile Apps That Work for You',
@@ -58,7 +58,7 @@ export default function HeroSwiper() {
             ctaLink: 'end',
         },
         {
-            src: '/custom/img/hero/cloud-technology.jpg',
+            src: '/custom/img/hero-webp/cloud-technology.webp',
             alt: 'Cloud technology',
             labelClass: 'col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start',
             heading: 'Cloud Strategy and Migration Made Simple',
@@ -67,7 +67,7 @@ export default function HeroSwiper() {
             ctaLink: 'center'
         },
         {
-            src: '/custom/img/hero/computer-servicing.jpg',
+            src: '/custom/img/hero-webp/computer-servicing.webp',
             alt: 'Computer Servicing',
             labelClass: 'col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start',
             heading: 'Reliable IT Support and System Maintenance',
@@ -76,7 +76,7 @@ export default function HeroSwiper() {
             ctaLink: 'center'
         },
         {
-            src: '/custom/img/hero/working-technician.jpg',
+            src: '/custom/img/hero-webp/working-technician.webp',
             alt: 'Computer Technician',
             labelClass: 'col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center justify-content-center align-self-center',
             heading: 'Skilled IT Professionals, When You Need Them',
@@ -85,7 +85,7 @@ export default function HeroSwiper() {
             ctaLink: 'center'
         },
         {
-            src: '/custom/img/hero/software-license.png',
+            src: '/custom/img/hero-webp/software-license.webp',
             alt: 'Computer Software License',
             labelClass: 'col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start',
             heading: 'Official Software Licenses, All in One Place',
