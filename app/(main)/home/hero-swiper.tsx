@@ -38,6 +38,7 @@ export default function HeroSwiper() {
             subheading: 'We help businesses modernize operations with reliable IT equipment, custom software, cloud consulting, and full-stack tech solutions.',
             cta: 'Explore Our Services',
             ctaLink: '#our-services',
+            priority: true,
         },
         {
             src: '/custom/img/hero-webp/abstract-cybersecurity-concept-design.webp',
@@ -46,7 +47,8 @@ export default function HeroSwiper() {
             heading: 'Reliable IT Hardware Delivered Fast',
             subheading: 'From uninterruptible power supplies (UPS), laptops to servers and routers — we supply quality IT equipment for every business need.',
             cta: 'Request a Quote Today',
-            ctaLink: 'start'
+            ctaLink: 'start',
+            priority: true,
         },
         {
             src: '/custom/img/hero-webp/web-developer.webp',
@@ -56,6 +58,7 @@ export default function HeroSwiper() {
             subheading: 'We build scalable websites and mobile applications that drive results across devices.',
             cta: 'Start Your Project Now',
             ctaLink: 'end',
+            priority: false,
         },
         {
             src: '/custom/img/hero-webp/cloud-technology.webp',
@@ -64,7 +67,8 @@ export default function HeroSwiper() {
             heading: 'Cloud Strategy and Migration Made Simple',
             subheading: 'Maximize performance and reduce costs with expert cloud consulting and infrastructure solutions.',
             cta: 'Talk to a Cloud Expert',
-            ctaLink: 'center'
+            ctaLink: 'center',
+            priority: false,
         },
         {
             src: '/custom/img/hero-webp/computer-servicing.webp',
@@ -73,7 +77,8 @@ export default function HeroSwiper() {
             heading: 'Reliable IT Support and System Maintenance',
             subheading: 'Prevent downtime and keep your tech running smoothly with our proactive maintenance services.',
             cta: 'Schedule a Service',
-            ctaLink: 'center'
+            ctaLink: 'center',
+            priority: false,
         },
         {
             src: '/custom/img/hero-webp/working-technician.webp',
@@ -82,7 +87,8 @@ export default function HeroSwiper() {
             heading: 'Skilled IT Professionals, When You Need Them',
             subheading: 'Augment your team with certified developers, engineers, and IT support staff.',
             cta: 'Hire Now',
-            ctaLink: 'center'
+            ctaLink: 'center',
+            priority: false,
         },
         {
             src: '/custom/img/hero-webp/software-license.webp',
@@ -91,7 +97,8 @@ export default function HeroSwiper() {
             heading: 'Official Software Licenses, All in One Place',
             subheading: 'We supply genuine software licenses for Windows, Microsoft 365, Adobe, and more.',
             cta: 'Get a License Quote',
-            ctaLink: 'center'
+            ctaLink: 'center',
+            priority: false,
         },
     ];
 
@@ -104,7 +111,7 @@ export default function HeroSwiper() {
                             <div key={i} className="swiper-slide position-relative h-100 w-100 overflow-hidden">
                                 {/* Image */}
                                 <Image
-                                    priority
+                                    priority={slide.priority}
                                     src={slide.src}
                                     alt={slide.alt}
                                     fill
