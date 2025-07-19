@@ -1,6 +1,6 @@
-import { MenuItem } from "../nav/NavItem";
+import { TopMenu } from "./NavMenu";
 
-export const items: MenuItem[] = [
+export const items: TopMenu[] = [
     {
         label: "Home",
         href: "/"
@@ -21,7 +21,7 @@ export const items: MenuItem[] = [
                 label: "Laptops and Desktops",
                 href: "#",
             },
-            
+
         ]
     },
     {

@@ -12,13 +12,13 @@ type Category = {
     subcategories?: Subcategory[];
 }
 
-type MenuItem = {
+type TopMenu = {
     label: string;
     href: string;
     categories?: Category[];
 }
 
-export const NavItem = ({ item }: { item: MenuItem }) => {
+export const NavMenu = ({ item }: { item: TopMenu }) => {
     return (
         <li className={clsx("slide", item.categories && "has-sub")}>
 
@@ -68,4 +68,4 @@ export const NavItem = ({ item }: { item: MenuItem }) => {
     );
 }
 
-export type { MenuItem, Category, Subcategory };
+export type { TopMenu, Category, Subcategory };

@@ -1,8 +1,8 @@
 import React from "react";
 import Script from "next/script";
-import Switcher from "@/components/ui/core/main/Switcher";
-import Header from "@/components/ui/core/main/Header";
-import NavBar from "@/components/ui/core/main/NavBar";
+import Switcher from "@/components/ui/layouts/main/Switcher";
+import Header from "@/components/ui/layouts/main/Header";
+import NavBar from "@/components/ui/layouts/main/nav/NavBar";
 import Copyright from "@/components/ui/core/Copyright";
 import Footer from "./footer";
 

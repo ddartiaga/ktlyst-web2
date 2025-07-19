@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 export default function Header() {
 
     return (
@@ -11,7 +10,7 @@ export default function Header() {
                 <div className="header-content-left">
                     <div className="header-element">
                         <div className="horizontal-logo">
-                            <Link href="/" className="header-logo">
+                            <Link href={"/"} className="header-logo">
                                 <Image src="/custom/img/kata-logo.png" alt="logo" className="toggle-logo" width={70} height={200} />
                                 <Image src="/custom/img/kata-logo.png" alt="logo" className="toggle-dark" width={70} height={200} />
                             </Link>
@@ -34,9 +33,9 @@ export default function Header() {
                 <div className="header-content-right">
                     <div className="header-element align-items-center">
                         <div className="btn-list d-lg-none d-block">
-                            <a href="sign-up-basic.html" className="btn btn-primary-light">
-                                Sign Up
-                            </a>
+                            <Link href={"/dashboard"} className="btn btn-primary-light">
+                                Get Started
+                            </Link>
                             {/* <button
                                 className="btn btn-icon btn-success switcher-icon"
                                 data-bs-toggle="offcanvas"

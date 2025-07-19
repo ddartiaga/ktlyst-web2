@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { items } from "./nav-items";
-import { NavItem } from "../nav/NavItem";
+import { NavMenu } from "./NavMenu";
 
 export default function NavBar() {
     return (
@@ -14,7 +14,7 @@ export default function NavBar() {
                     <nav className="main-menu-container nav nav-pills sub-open">
                         <div className="landing-logo-container">
                             <div className="horizontal-logo">
-                                <Link href="/" className="header-logo">
+                                <Link href={"/"} className="header-logo">
                                     <Image src="/custom/img/kata-logo.png" alt="logo" className="desktop-logo" width={70} height={60} />
                                     <Image src="/custom/img/kata-logo.png" alt="logo" className="desktop-white" width={70} height={60} />
                                 </Link>
@@ -34,7 +34,7 @@ export default function NavBar() {
                         </div>
                         <ul className="main-menu">
                             {items.map((item) => (
-                                <NavItem key={item.label} item={item} />
+                                <NavMenu key={item.label} item={item} />
                             ))}
                         </ul>
                         <div className="slide-right" id="slide-right">
@@ -51,12 +51,9 @@ export default function NavBar() {
                         </div>
                         <div className="d-lg-flex d-none">
                             <div className="btn-list d-lg-flex d-none mt-lg-2 mt-xl-0 mt-0">
-                                <a href="#" className="btn btn-wave btn-primary">
-                                    Sign Up
-                                </a>
-                                {/* <a href="#" className="btn btn-wave btn-primary">
-                                    Login
-                                </a> */}
+                                <Link href={"/dashboard"} className="btn btn-wave btn-primary">
+                                    Get Started
+                                </Link>
                                 {/* <button
                                     className="btn btn-wave btn-icon btn-light switcher-icon"
                                     data-bs-toggle="offcanvas"

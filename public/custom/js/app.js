@@ -1,5 +1,4 @@
-// scrollCue
-scrollCue.init();
+
 
 
 
